@@ -210,11 +210,11 @@ public class AddressBook {
         showWelcomeMessage();
         processProgramArgs(args);
         loadDataFromStorage();
-        processInputs();
+        processUserInputs();
         return;
     }
 
-    private static void processInputs() {
+    private static void processUserInputs() {
         while (true) {
             String userCommand = getUserInput();
             echoUserCommand(userCommand);
